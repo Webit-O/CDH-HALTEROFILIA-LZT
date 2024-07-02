@@ -1,6 +1,5 @@
 .navbar {
   width: 100%;
-  min-width: 360px;
   background-color: #2525250f;
 }
 
@@ -22,28 +21,30 @@
 
 #nav-mobile-style #nav-list {
   flex-direction: column;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding-top: 55px;
 }
 
 #nav-mobile-style #nav-list ul {
   display: flex;
+  width: 100%;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  padding: 25px;
 }
 
-#nav-list {
-  flex-direction: column;
-  display: flex;
-  justify-content: right;
+#nav-list ul:hover{
+  cursor: pointer;
+  color: var(--night);
+  background-color: var(--satin-sheen-gold);
 }
 
-#nav-list ul {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
+#nav-list ul:active{
+  cursor: pointer;
+  color: var(--night);
+  background-color: var(--satin-sheen-gold);
 }
 
 #nav-list a{
@@ -51,4 +52,30 @@
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+}
+
+@media (min-width: 800px){
+
+  #nav-mobile-style {
+    display: none;
+  }
+
+  #nav-web-style {
+    display: flex;
+    justify-content: right;
+  }
+  
+  #nav-web-style #nav-list {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+  }
+  
+  #nav-web-style #nav-list ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+  }
 }
