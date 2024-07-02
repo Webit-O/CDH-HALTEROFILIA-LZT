@@ -1,6 +1,11 @@
 .navbar {
   width: 100%;
+  padding-top: 20px;
   background-color: #2525250f;
+}
+
+#logo-header {
+  max-width: 100px;
 }
 
 .HamburgerMenu {
@@ -62,13 +67,14 @@
 
   #nav-web-style {
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
   }
   
   #nav-web-style #nav-list {
     width: 80%;
     display: flex;
     justify-content: right;
+    align-items: center;
   }
   
   #nav-web-style #nav-list ul {
