@@ -1,7 +1,10 @@
 .navbar {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
   padding-top: 20px;
-  background-color: #2525250f;
+  background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(37,37,37,0.01) 100%);
 }
 
 #logo-header {
@@ -22,6 +25,7 @@
 #nav-mobile-style {
   display: flex;
   justify-content: center;
+  background-color: var(--night);
 }
 
 #nav-mobile-style #nav-list {
