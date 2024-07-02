@@ -10,10 +10,10 @@ const Header = () => {
   const Close = <MdClose className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
   return (
     <>
-      <div class='navbar' id='nav-web-style'>
+      <div className='navbar' id='nav-web-style'>
         <Navlinks />
       </div>
-      <div class='navbar' id='nav-mobile-style'>
+      <div className='navbar' id='nav-mobile-style'>
         { click ? Close : Hamburger}
         {click && <Navlinks />}
       </div>
