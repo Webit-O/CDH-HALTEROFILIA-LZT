@@ -6,8 +6,8 @@ import Navlinks from '../Navlinks/Navlinks';
 
 const Header = () => {
   const [click, setclick] = useState(false);
-  const Hamburger = <MdOutlineMenu className="HamburgerMenu" size="50px" onClick={() => setclick(!click)} />
-  const Close = <MdClose className="HamburgerMenu" size="50px" onClick={() => setclick(!click)} />
+  const Hamburger = <MdOutlineMenu className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
+  const Close = <MdClose className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
   return (
     <>
       <div class='navbar' id='nav-web-style'>
