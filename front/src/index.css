@@ -24,15 +24,23 @@
 /* DEFINIENDO LAS CUSTOM PROPERTIES */
 
 :root {
-    /* COLORES */
-    --gold-metallic: #BFA41B;
-    --satin-sheen-gold: #BF961B;
-    --field-drab: #735807;
-    --white-smoke: #F2F2F2;
-    --night: #0D0D0D;
+  /* COLORES */
+  --gold-metallic: #BFA41B;
+  --satin-sheen-gold: #BF961B;
+  --field-drab: #735807;
+  --white-smoke: #F2F2F2;
+  --night: #0D0D0D;
+  /* TIPOGRAFÍAS */
+  --black-ops-one-font: 'Black Ops One', system-ui;
+}
 
-    /* TIPOGRAFÍAS */
-    --black-ops-one-font: 'Black Ops One', system-ui;
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+
 }
 
 /* COLORES QUE ADAPTAMOS AL MODO OSCURO SEGÚN LAS OPCIONES PERSONALIZADAS DE CADA USUARIO EN EL NAVEGADOR */
@@ -134,6 +142,6 @@ body {
     min-height: 100vh;
     font-size: 100%;
     font-family: 'Agrandir', sans-serif;
-    color: var(--night);
-    background-color: var(--white-smoke);
+    color: var(--white-smoke);
+    background-color: var(--night);
 }

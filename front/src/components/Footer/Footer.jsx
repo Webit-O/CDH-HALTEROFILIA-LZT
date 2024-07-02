@@ -1,10 +1,10 @@
-import React from 'react'
+import './Footer.css'
 
-function Footer() {
+const Footer = () => {
   return (
-    <>
-      <p>ESTE ES EL PIE DE PAGINA</p>
-    </>
+    <div id='footer'>
+      
+    </div>
   )
 }
 

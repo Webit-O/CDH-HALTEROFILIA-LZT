@@ -1,9 +1,22 @@
-import React from 'react'
+import './Header.css'
+import {MdOutlineMenu} from 'react-icons/md'
+import {MdClose} from 'react-icons/md';
+import { useState } from "react";
+import Navlinks from '../Navlinks/Navlinks';
 
-function Header() {
+const Header = () => {
+  const [click, setclick] = useState(false);
+  const Hamburger = <MdOutlineMenu className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
+  const Close = <MdClose className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
   return (
     <>
-      <p>ESTA ES LA CABECERA</p>
+      <div class='navbar' id='nav-web-style'>
+        <Navlinks />
+      </div>
+      <div class='navbar' id='nav-mobile-style'>
+        { click ? Close : Hamburger}
+        {click && <Navlinks />}
+      </div>
     </>
   )
 }
