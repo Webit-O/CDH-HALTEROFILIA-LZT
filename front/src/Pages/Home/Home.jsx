@@ -1,10 +1,9 @@
-import React from 'react'
+import './Home.css'
 
-function Home() {
+const Home = () => {
   return (
-    <>
-      <h1>Esta es la vista Home</h1>
-    </>
+    <div>
+    </div>
   )
 }
 
