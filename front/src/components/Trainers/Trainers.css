@@ -1,0 +1,63 @@
+#trainers-page{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#trainers-page .title {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--night);
+  background-color: var(--white-smoke);
+  padding: 20px 0;
+}
+
+#outlined-text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin: 35px 0;
+  height: 4rem;
+}
+
+.text-shadow {
+  position: absolute;
+  top: 0;
+  font-size: 1.7rem;
+  z-index: -1;
+  color: var(--night);
+  opacity: 0.3;
+  text-shadow:
+  1px 1px 2px var(--satin-sheen-gold),
+  -1px 1px 2px var(--satin-sheen-gold),
+  -1px -1px 0 var(--satin-sheen-gold),
+  1px -1px 0 var(--satin-sheen-gold);
+}
+
+.normal-text {
+  font-size: 1.7rem;
+  color: var(--satin-sheen-gold);
+  position: absolute;
+  top: 9px;
+}
+
+#trainers-page p {
+  width: 65%;
+  text-align: justify;
+}
+
+#info-btn a {
+  background-color: var(--satin-sheen-gold);
+  color: var(--night);
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 5px 70px 2px 70px;
+  margin-top: 20px;
+}

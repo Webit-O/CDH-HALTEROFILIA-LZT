@@ -34,13 +34,13 @@
 
 #train-btn:hover a{
   color: var(--night);
-  text-shadow: 0px 1px 1px var(--field-drab);;
+  text-shadow: 0px 1px 1px var(--field-drab);
   background-color: var(--satin-sheen-gold);
 }
 
 #train-btn:active a{
   color: var(--night);
-  text-shadow: 0px 1px 1px var(--field-drab);;
+  text-shadow: 0px 1px 1px var(--field-drab);
   background-color: var(--satin-sheen-gold);
 }
 

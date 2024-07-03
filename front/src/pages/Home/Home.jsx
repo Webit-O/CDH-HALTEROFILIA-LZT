@@ -4,10 +4,10 @@ import Trainers from '../../components/Trainers/Trainers'
 
 const Home = () => {
   return (
-    <>
+    <div id='home-container'>
       <TitlePage/>
       <Trainers/>
-    </>
+    </div>
   )
 }
 
