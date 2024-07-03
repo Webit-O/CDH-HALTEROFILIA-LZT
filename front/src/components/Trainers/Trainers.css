@@ -30,7 +30,7 @@
 .text-shadow {
   position: absolute;
   top: 0;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   z-index: -1;
   color: var(--night);
   opacity: 0.3;
