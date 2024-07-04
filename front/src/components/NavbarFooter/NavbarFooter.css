@@ -1,13 +1,73 @@
-@media (300px <= width < 900px) {
-    .prueba {
-        height: 200px;
-        background-color: tomato;
+@media (300px <= width < 870px) {
+    .navbar-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        min-height: calc(20em - 5vh);
+        padding-top: 1em;
+        color: var(--satin-sheen-gold);
+    }
+
+    li a {
+        text-decoration: underline;
+    }
+
+    .navbar-contact li a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-home li,
+    .navbar-legit li {
+        padding: .5em;
+        font-size: calc(.8em + .2vw);
+    }
+
+    .navbar-home,
+    .navbar-legit,
+    .navbar-contact,
+    .navbar-social {
+        padding: 1em;
+    }
+
+    .navbar-legit {
+        grid-row: 2 / 3;
+    }
+
+    .navbar-contact span {
+        padding-left: .4em;
+    }
+
+    .navbar-social {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: .6em;
+        h3 {
+            width: 100%;
+        }
+        li a {
+            font-size: calc(2.5em + .5vw);
+        }
+    }
+
+    .contact-map > a {
+        display: flex;
+        align-items: flex-start;
+        padding-top: .8em;
+    }
+
+    .navbar-contact__title,
+    .navbar-social__title {
+        color: var(--white-smoke);
+        padding-bottom: .5em;
     }
 }
 
 
-@media (width > 900px) {
-    .prueba {
+@media (width > 870px) {
+    .navbar-footer {
         height: 100px;
         background-color: teal;
     }

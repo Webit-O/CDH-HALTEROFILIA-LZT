@@ -1,11 +1,11 @@
 import React from 'react'
+import { FaInstagram, FaYoutube, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import './NavbarFooter.css'
 
 
 function NavbarFooter() {
   return (
-    <>
-     <div className='prueba'>
+    <div className='navbar-footer'>
         <ul className="navbar-home">
             <li><a href="#">INICIO</a></li>
             <li><a href="#">SOBRE NOSOTROS</a></li>
@@ -19,16 +19,15 @@ function NavbarFooter() {
         </ul>
         <ul className='navbar-contact'>
             <h3 className='navbar-contact__title'>CONTACTA</h3>
-            <li><a href="#">correo</a></li>
-            <li><a href="#">zona</a></li>
+            <li><a href="#"><FaEnvelope /><span>cdhalmas@gmail.com</span></a></li>
+            <li className='contact-map'><a href="#"><FaMapMarkerAlt /><span>C/. Lanzarote, 35559, Lanzarote</span></a></li>
         </ul>
         <ul className='navbar-social'>
             <h3 className='navbar-social__title'>SÍGUENOS</h3>
-            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+            <li><a href="#"><FaInstagram /></a></li>
+            <li><a href="#"><FaYoutube /></a></li>
         </ul>
-      </div>
-    </>
+    </div>
   )
 }
 
