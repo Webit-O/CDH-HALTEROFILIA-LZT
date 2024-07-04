@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
       <div className='navbar' id='nav-web-style'>
-        <img id='logo-header' src="../../../public/img/cdhalmas-logo.png" alt="halmas logo" />
+        <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
         <Navlinks />
       </div>
       <div className='navbar' id='nav-mobile-style'>

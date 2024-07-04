@@ -4,6 +4,16 @@ const Trainers = () => {
   return (
     <div id='trainers-page'>
       <h2 className='title'>¡TRABAJA CON PROFESIONALES!</h2>
+      <div id='trainers-img-container'>
+        <div className='img-wrapper'>
+          <img className='trainer-img' src="/img/cdh-trainer2.jpg" alt="" />
+          <p className='trainer-name'>ANDREA M.L.</p>
+        </div>
+        <div className='img-wrapper'>
+          <img className='trainer-img' src="/img/cdh-trainer1.jpg" alt="" />
+          <p className='trainer-name'>JOSE A.C.</p>
+        </div>
+      </div>
       <div id='outlined-text-container'>
         <h1 className='normal-text'>CONSIGUE RESULTADOS REALES</h1>
         <h1 className='text-shadow'>CONSIGUE RESULTADOS REALES</h1>

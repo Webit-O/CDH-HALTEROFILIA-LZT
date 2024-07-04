@@ -61,3 +61,20 @@
   padding: 5px 70px 2px 70px;
   margin-top: 20px;
 }
+
+#trainers-img-container {
+  display: flex;
+  padding-top: 30px;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.trainer-img {
+  width: 150px;
+  border-radius: 2px;
+}
+
+.trainer-name {
+  background-color: var(--satin-sheen-gold);
+  color: var(--night);
+}
