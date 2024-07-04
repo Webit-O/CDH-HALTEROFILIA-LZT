@@ -75,6 +75,16 @@
 }
 
 .trainer-name {
+  display: flex;
+  font-weight: 600;
   background-color: var(--satin-sheen-gold);
   color: var(--night);
+  justify-content: center;
+}
+
+.img-wrapper {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: center;
 }
