@@ -1,0 +1,14 @@
+@media (300px <= width < 900px) {
+    .prueba {
+        height: 200px;
+        background-color: tomato;
+    }
+}
+
+
+@media (width > 900px) {
+    .prueba {
+        height: 100px;
+        background-color: teal;
+    }
+}

@@ -1,5 +1,23 @@
-body {
+.header {
+    grid-area: header;
+}
+
+.outlet {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.body-layout {
     width: 100%;
-    height: 100%;
-    background-color: #333;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% auto 25%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
 }

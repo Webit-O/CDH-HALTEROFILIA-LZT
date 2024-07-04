@@ -7,9 +7,11 @@ import './Layout.css'
 function Layout() {
   return (
     <>
-      <Header />
-      <Outlet />
-      <Footer />
+      <div className="body-layout">        
+        <Header className="header" />
+        <Outlet className="outlet" />
+        <Footer className="footer" />
+      </div>
     </>
   )
 }

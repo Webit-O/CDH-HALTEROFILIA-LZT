@@ -34,15 +34,6 @@
   --black-ops-one-font: 'Black Ops One', system-ui;
 }
 
-body {
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-
-}
-
 /* COLORES QUE ADAPTAMOS AL MODO OSCURO SEGÚN LAS OPCIONES PERSONALIZADAS DE CADA USUARIO EN EL NAVEGADOR */
 
 @media (prefers-color-scheme: dark) {
@@ -134,6 +125,10 @@ form, input, textarea, select, button, label {
     background-color: transparent;
     display: block;
     color: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* CONFIGURAMOS LA TIPOGRAFÍA PARA TODA LA WEB */
