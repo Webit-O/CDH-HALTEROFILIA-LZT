@@ -1,9 +1,11 @@
+import QuotesList from '../../components/QuotesList/QuotesList'
 import './Home.css'
 
 const Home = () => {
   return (
-    <div>
-    </div>
+    <>
+      <QuotesList />
+    </>
   )
 }
 
