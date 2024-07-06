@@ -8,7 +8,7 @@ const Header = () => {
   const [click, setclick] = useState(false);
   const Hamburger = (
     <>
-      <img id='logo-header' src="../../../public/img/cdhalmas-logo.png" alt="halmas logo" />
+      <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
       <MdOutlineMenu className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
     </>
   )
