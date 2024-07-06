@@ -1,0 +1,8 @@
+.closed {
+  top: -200px;
+}
+
+.open {
+  top: 0;
+  transition: 2.2s cubic-bezier(.36,-0.01,0,.77);
+}

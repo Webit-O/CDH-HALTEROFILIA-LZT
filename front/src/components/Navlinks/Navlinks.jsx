@@ -1,8 +1,8 @@
-import React from 'react'
+import './Navlinks.css'
 
-const Navlinks = () => {
+const Navlinks = (props) => {
   return (
-    <li id='nav-list'>
+    <li className={props.menuHandler} id='nav-list'>
         <ul><a href="">INICIO</a></ul>
         <ul><a href="">TIENDA</a></ul>
         <ul><a href="">SOBRE NOSOTROS</a></ul>
