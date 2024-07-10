@@ -42,6 +42,10 @@
   justify-content: center;
   text-align: center;
   padding: 25px;
+  box-sizing: border-box;
+  border-top: 0.5px solid var(--satin-sheen-gold);
+  border-bottom: 0.5px solid var(--satin-sheen-gold);
+  outline: 0.5px solid var(--satin-sheen-gold);
 }
 
 #nav-list ul:hover{
