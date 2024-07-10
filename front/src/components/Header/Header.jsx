@@ -6,17 +6,14 @@ import Navlinks from '../Navlinks/Navlinks';
 
 const Header = () => {
   const [click, setclick] = useState(false);
-  const [menu, setMenu] = useState('closed');
   const Hamburger = (
     <>
       <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
-      <MdOutlineMenu className="HamburgerMenu" size="80px" onClick={() => setclick(!click, menuHandler())} />
+      <MdOutlineMenu className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
     </>
   )
-  const Close = <MdClose className="HamburgerMenu" size="80px" onClick={() => setclick(!click, menuHandler())} />
-  const menuHandler = () => {
-    return menu === 'closed' ? setMenu('open') : setMenu('closed')
-  }
+  const Close = <MdClose className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
+
   return (
     <div>
       <div className='navbar' id='nav-web-style'>
@@ -25,7 +22,7 @@ const Header = () => {
       </div>
       <div className='navbar' id='nav-mobile-style'>
         {click ?  Close : Hamburger}
-        {click && <Navlinks menuHandler = {menuHandler}/>}
+        {click && <Navlinks />}
       </div>
     </div>
   )

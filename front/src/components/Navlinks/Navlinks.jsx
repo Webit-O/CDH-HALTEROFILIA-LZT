@@ -1,8 +1,8 @@
 import './Navlinks.css'
 
-const Navlinks = (props) => {
+const Navlinks = () => {
   return (
-    <li className={props.menuHandler} id='nav-list'>
+    <li id='nav-list'>
         <ul><a href="">INICIO</a></ul>
         <ul><a href="">TIENDA</a></ul>
         <ul><a href="">SOBRE NOSOTROS</a></ul>
