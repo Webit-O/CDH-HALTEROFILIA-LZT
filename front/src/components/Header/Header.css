@@ -3,12 +3,13 @@
   position: fixed;
   top: 0;
   z-index: 5;
-  padding-top: 20px;
+  padding-top: 10px;
   background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(37,37,37,0.01) 100%);
 }
 
 #logo-header {
-  max-width: 100px;
+  width: 80px;
+  padding: 10px;
 }
 
 .HamburgerMenu {
@@ -43,9 +44,9 @@
   text-align: center;
   padding: 25px;
   box-sizing: border-box;
-  border-top: 0.5px solid var(--satin-sheen-gold);
-  border-bottom: 0.5px solid var(--satin-sheen-gold);
-  outline: 0.5px solid var(--satin-sheen-gold);
+  border-top: 0.5px solid #ffcc0044;
+  border-bottom: 0.5px solid #ffcc0044;
+  outline: 0.5px solid #ffcc0044;
 }
 
 #nav-list ul:hover{

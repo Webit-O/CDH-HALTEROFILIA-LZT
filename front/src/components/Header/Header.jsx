@@ -9,10 +9,10 @@ const Header = () => {
   const Hamburger = (
     <>
       <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
-      <MdOutlineMenu className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
+      <MdOutlineMenu className="HamburgerMenu" size="70px" onClick={() => setclick(!click)} />
     </>
   )
-  const Close = <MdClose className="HamburgerMenu" size="80px" onClick={() => setclick(!click)} />
+  const Close = <MdClose className="HamburgerMenu" size="70px" onClick={() => setclick(!click)} />
 
   return (
     <div>

@@ -5,22 +5,42 @@
   padding-top: 150px;
 }
 
-#title-left-container {
+#title-container {
   display: flex;
   flex-direction: column;
   width: 87%;
   gap: 20px;
 }
 
-.title {
-  font-size: 1.9rem;
-}
-
-#title-container {
+#title-left-container {
   display: flex;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
   flex-direction: column;
   text-align: justify;
   gap: 5px;
+  background: linear-gradient(180deg, #00000000 0%, #00000063 25%, #000000bc 50%, #000000 100%);
+}
+
+#title-right-container {
+  display: none;
+  width: 13%;
+}
+
+#title-upper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile-video {
+  align-self: center;
+  max-width: 325px;
+  max-height: 400px;
+}
+
+.title {
+  font-size: 1.9rem;
 }
 
 .yellow-title {
@@ -47,8 +67,4 @@
 #train-btn a {
   color: var(--satin-sheen-gold);
   padding: 15px 40px;
-}
-
-#video-container {
-  display: none;
 }

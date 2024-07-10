@@ -6,11 +6,11 @@ const Trainers = () => {
       <h2 className='title'>¡TRABAJA CON PROFESIONALES!</h2>
       <div id='trainers-img-container'>
         <div className='img-wrapper'>
-          <img className='trainer-img' src="/img/cdh-trainer2.jpg" alt="" />
+          <img className='trainer-img' src="/img/cdh-trainer2.jpg" alt="Entrenadora de CDHalmas Andrea" />
           <p className='trainer-name'>ANDREA M.L.</p>
         </div>
         <div className='img-wrapper'>
-          <img className='trainer-img' src="/img/cdh-trainer1.jpg" alt="" />
+          <img className='trainer-img' src="/img/cdh-trainer1.jpg" alt="Entrenador de CDHalmas Jose" />
           <p className='trainer-name'>JOSE A.C.</p>
         </div>
       </div>
