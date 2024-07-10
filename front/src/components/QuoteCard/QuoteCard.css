@@ -1,3 +1,29 @@
 .quote-card {
     color: var(--white-smoke);
 }
+
+.quote-card-pic,
+.quote-card-title {
+    text-align: end;
+    padding: 0em 1em;
+    margin-bottom: .1em;
+}
+
+.quote-card-title {
+    font-size: calc(.8em + 1vw);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gold-metallic);
+}
+
+.quote-card-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.quote-card-text {
+    font-size: calc(.8em + 1vw);
+    padding-top: 1em;
+    padding: 0em .2em;
+}

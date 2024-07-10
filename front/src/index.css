@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 /* CONFIGURAMOS EL TEXTO QUE SELECCIONAMOS */
 
 ::selection {
-    background-color: var(--night);
+    background-color: var(--field-drab);
     color: var(--white-smoke);
 }
 
