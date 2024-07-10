@@ -1,0 +1,6 @@
+ul {
+  box-sizing: border-box;
+  border-top: 0.5px solid var(--satin-sheen-gold);
+  border-bottom: 0.5px solid var(--satin-sheen-gold);
+  outline: 0.5px solid var(--satin-sheen-gold);
+}
