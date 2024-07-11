@@ -1,11 +1,70 @@
+.training {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.training__h2{
+    text-align: center;
+    font-family: var(--black-ops-one-font);
+    font-size: calc(1rem + 1.2vw);
+    color: var(--gold-metallic);
+    padding: 1em;
+}
+
+.training__section {
+    min-height: calc(10em + 8vh);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding-bottom: 1em;
+}
+
+.training__picture {
+    height: calc(10em + 10vh);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    -webkit-filter: brightness(80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.training__h3 {
+    width: 80%;
+    text-align: center;
+    font-size: calc(1.2em + 1vw);
+    font-weight: bold;
+    padding: calc(1em - 1vh);
+    border: 4px solid var(--gold-metallic);
+    color: var(--white-smoke);
+}
+
+
 .opo {
-    background-image: url("/img/train-1.jpg");
+    background-image: url("/img/train-2.jpg");
+    background-position: center 60%;
 }
 
 .train {
-    background-image: url("/img/train-2.jpg");
+    background-image: url("/img/train-1.jpg");
 }
 
 .diet {
     background-image: url("/img/train-3.jpg");
+}
+
+.training-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: .4em;
+    align-items: flex-start;
+}
+
+.training-button {
+    color: var(--field-drab);
+    text-decoration: underline;
 }

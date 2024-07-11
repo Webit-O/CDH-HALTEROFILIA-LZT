@@ -26,7 +26,7 @@ function TrainSection() {
                 ADÉNTRATE EN EL MUNDO DE LA HALTEROFILIA Y FUERZA APLICADA,
                 TE ENSEÑAMOS A ENCONTRAR TU PROPIO CAMINO
             </p>
-            <button className='training-button'>RESERVAR</button>
+            <button className='training-button'>VER ENTRENOS</button>
         </article>
       </section>
       <section className="training__section">
