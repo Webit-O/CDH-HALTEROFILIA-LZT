@@ -68,7 +68,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
 
   #nav-mobile-style {
     display: none;
