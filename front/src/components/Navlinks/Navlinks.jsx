@@ -1,4 +1,4 @@
-import React from 'react'
+import './Navlinks.css'
 
 const Navlinks = () => {
   return (

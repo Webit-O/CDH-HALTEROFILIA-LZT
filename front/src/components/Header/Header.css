@@ -1,7 +1,15 @@
 .navbar {
   width: 100%;
-  min-width: 360px;
-  background-color: #2525250f;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding-top: 10px;
+  background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(37,37,37,0.01) 100%);
+}
+
+#logo-header {
+  width: 80px;
+  padding: 10px;
 }
 
 .HamburgerMenu {
@@ -18,32 +26,39 @@
 #nav-mobile-style {
   display: flex;
   justify-content: center;
+  background-color: var(--night);
 }
 
 #nav-mobile-style #nav-list {
   flex-direction: column;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding-top: 55px;
 }
 
 #nav-mobile-style #nav-list ul {
   display: flex;
+  width: 100%;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+  border-top: 0.5px solid #2b2b2b44;
+  border-bottom: 0.5px solid #2b2b2b44;
+  outline: 0.5px solid #2b2b2b44;
 }
 
-#nav-list {
-  flex-direction: column;
-  display: flex;
-  justify-content: right;
+#nav-list ul:hover{
+  cursor: pointer;
+  color: var(--night);
+  background-color: var(--satin-sheen-gold);
 }
 
-#nav-list ul {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
+#nav-list ul:active{
+  cursor: pointer;
+  color: var(--night);
+  background-color: var(--satin-sheen-gold);
 }
 
 #nav-list a{
@@ -51,4 +66,31 @@
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+}
+
+@media (min-width: 1000px){
+
+  #nav-mobile-style {
+    display: none;
+  }
+
+  #nav-web-style {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #nav-web-style #nav-list {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  #nav-web-style #nav-list ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+  }
 }
