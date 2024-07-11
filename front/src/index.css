@@ -34,19 +34,6 @@
   --black-ops-one-font: 'Black Ops One', system-ui;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-
-}
-
 /* COLORES QUE ADAPTAMOS AL MODO OSCURO SEGÚN LAS OPCIONES PERSONALIZADAS DE CADA USUARIO EN EL NAVEGADOR */
 
 @media (prefers-color-scheme: dark) {
@@ -122,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 /* CONFIGURAMOS EL TEXTO QUE SELECCIONAMOS */
 
 ::selection {
-    background-color: var(--night);
+    background-color: var(--field-drab);
     color: var(--white-smoke);
 }
 
@@ -138,6 +125,10 @@ form, input, textarea, select, button, label {
     background-color: transparent;
     display: block;
     color: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* CONFIGURAMOS LA TIPOGRAFÍA PARA TODA LA WEB */

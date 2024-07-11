@@ -1,0 +1,28 @@
+.quotes-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quotes-list-title {
+    font-family: var(--black-ops-one-font);
+    font-size: calc(1rem + 1.2vw);
+    color: var(--gold-metallic);
+    margin-bottom: 1.4em;
+    span {
+        color: var(--white-smoke);
+    }
+}
+
+.slick-slider {
+    width: 70%;
+}
+
+.slick-dots li button:before {
+    color: var(--field-drab) !important; /* Cambia #FFFFFF al color que prefieras */
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--gold-metallic) !important; /* Cambia #FFFFFF al color que prefieras */
+}
