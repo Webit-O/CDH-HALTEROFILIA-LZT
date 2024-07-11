@@ -9,8 +9,7 @@ function TshirtSection() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 800,
-    cssEase: 'linear',
+    autoplaySpeed: 2000,
     arrows: false
   }
   return (
