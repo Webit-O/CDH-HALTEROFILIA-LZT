@@ -25,7 +25,6 @@
 
 #title-right-container {
   display: none;
-  width: 13%;
 }
 
 #title-upper-wrapper {
@@ -71,4 +70,32 @@ video {
 #train-btn a {
   color: var(--satin-sheen-gold);
   padding: 15px 40px;
+}
+
+@media (min-width: 1000px) {
+  #title-right-container {
+    display: flex;
+  }
+
+  #mobile-video {
+    display: none;
+  }
+
+  .video-container {
+    display: flex;
+    overflow: hidden;
+    height: 450px;
+    align-items: center;
+  }
+
+  #title-upper-wrapper {
+    padding-top: 40px;
+    align-items: end;
+    justify-content: center;
+  }
+
+  #title-left-container {
+    width: 550px;
+    background: none;
+  }
 }

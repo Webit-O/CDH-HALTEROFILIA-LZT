@@ -15,8 +15,8 @@ const TitlePage = () => {
             <p>DESCUBRE TU CAMINO</p>
           </div>
           <div id='title-right-container'>
-            <div className='video-container'>
-              <video id='intro-video'><source src='/video/cdh-video.mp4'/></video>
+            <div id='web-video' className='video-container'>
+              <video id='intro-video' muted loop autoPlay><source src='/video/cdh-video.mp4'/></video>
             </div>
           </div>
         </div>
