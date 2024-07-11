@@ -98,14 +98,14 @@ video {
   #title-left-container {
     width: 700px;
     background: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   
   .yellow-title {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
   }
 }
