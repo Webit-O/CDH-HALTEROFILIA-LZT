@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const Navlinks = () => {
   return (
-    <li id='nav-list'>
-        <ul><a href=""><Link to="/">INICIO</Link></a></ul>
-        <ul><a href="">ENTRENAMIENTO</a></ul>
-        <ul><a href="">TIENDA</a></ul>
-        <ul><a href=""><Link to="/about">SOBRE NOSOTROS</Link></a></ul>
-    </li>
+    <ul id='nav-list'>
+        <li><Link to="/">INICIO</Link></li>
+        <li>ENTRENAMIENTO</li>
+        <li>TIENDA</li>
+        <li><Link to="/about">SOBRE NOSOTROS</Link></li>
+    </ul>
   )
 }
 
