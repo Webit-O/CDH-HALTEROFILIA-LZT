@@ -1,6 +1,6 @@
 import React from 'react'
-import './TshirtSection.css'
 import Slider from 'react-slick'
+import './TshirtSection.css'
 function TshirtSection() {
   let settings = {
     dots: true,
