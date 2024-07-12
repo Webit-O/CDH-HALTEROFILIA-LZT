@@ -30,7 +30,9 @@ function TshirtSection() {
             <img src="https://via.placeholder.com/300" alt="tshirt" />
           </div>
         </Slider>
-        <button className="product__button">PÁSATE POR NUESTRA TIENDA</button>     
+        <div className="product__div">
+          <button className="product__button">PÁSATE POR NUESTRA TIENDA</button>     
+        </div>
       </article>
     </section>
   )
