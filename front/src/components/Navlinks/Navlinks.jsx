@@ -1,13 +1,13 @@
 import './Navlinks.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navlinks = () => {
   return (
     <ul id='nav-list'>
-        <li><Link to="/">INICIO</Link></li>
-        <li>ENTRENAMIENTO</li>
-        <li>TIENDA</li>
-        <li><Link to="/about">SOBRE NOSOTROS</Link></li>
+        <NavLink to="/" exact activeClassName="active"><li>INICIO</li></NavLink>
+        <NavLink to="/training" activeClassName="active"><li>ENTRENAMIENTO</li></NavLink>
+        <NavLink to="/store" activeClassName="active"><li>TIENDA</li></NavLink>
+        <NavLink to="/about" activeClassName="active"><li>SOBRE NOSOTROS</li></NavLink>
     </ul>
   )
 }

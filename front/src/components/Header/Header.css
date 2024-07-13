@@ -33,7 +33,6 @@
   flex-direction: column;
   width: 100%;
   display: flex;
-  justify-content: right;
   padding-top: 55px;
 }
 
@@ -49,14 +48,13 @@
   outline: 0.5px solid #2b2b2b44;
 }
 
-#nav-list li:hover{
+#nav-list li:hover {
   cursor: pointer;
   color: var(--night);
   background-color: var(--satin-sheen-gold);
 }
 
-#nav-list li:active{
-  cursor: pointer;
+#nav-list .active {
   color: var(--night);
   background-color: var(--satin-sheen-gold);
 }
@@ -76,20 +74,26 @@
 
   #nav-web-style {
     display: flex;
+    width: 100%;
+    padding: 0;
     justify-content: space-around;
   }
   
   #nav-web-style #nav-list {
-    width: 85%;
     display: flex;
-    justify-content: end;
+    width: 75%;
     align-items: center;
+    justify-content: space-between;
   }
-  
+
   #nav-web-style #nav-list li {
-    display: flex;
     width: 100%;
-    justify-content: center;
-    padding: 25px 0;
+    text-align: center;
+    padding: 25px;
+  }
+
+  #nav-web-style #nav-list a {
+    width: 100%;
+    text-align: center;
   }
 }
