@@ -5,7 +5,6 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div id='footer' className='footer'>
-      <h2 className='footer__h2'>Club deportivo Halmas</h2>
       <NavbarFooter />
       <div className='footer__div'>
         <section className='contact-section'>

@@ -38,6 +38,7 @@ function NavbarFooter() {
   });
   return (
     <footer className='navbar-footer'>
+      <h2 className='navbar-footer__h2'>Club deportivo Halmas</h2>
         { getRenderLinks }
     </footer>
   )

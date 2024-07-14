@@ -8,15 +8,6 @@
     row-gap: 1.2em;
 }
 
-.footer__h2 {
-    width: 100%;
-    padding-left: .8em;
-    font-size: calc(.8em + 1vw);
-    font-weight: 600;
-    color: var(--white-smoke);
-    text-transform: uppercase;
-}
-
 .footer__div {
     display: flex;
     flex-wrap: wrap;
@@ -57,4 +48,29 @@
     flex-direction: row;
     font-size: calc(2em + 1vw);
     column-gap: .5em;
+}
+
+@media (width >= 768px) {
+    .footer {
+        flex-direction: row;
+    }
+
+    .navbar-footer,
+    .footer__div {
+        width: 50%;
+    }
+
+    .navbar-footer{
+        font-size: calc(.6em + .8vw);
+    }
+    .navbar-footer__h2 {
+        font-size: calc(.7em + 1vw);
+    }
+    
+    .contact-section__p {
+        font-size: calc(.6em + 1vw);
+        a > .icon {
+            font-size: calc(.6em + 1vw);
+        }
+    }
 }

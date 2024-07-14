@@ -9,6 +9,14 @@
     margin-bottom: 2em;
 }
 
+.navbar-footer__h2 {
+    width: 100%;
+    font-size: calc(1em + 1vw);
+    font-weight: 600;
+    color: var(--white-smoke);
+    text-transform: uppercase;
+}
+
 .navbar-home,
 .navbar-legit {
     display: flex;
