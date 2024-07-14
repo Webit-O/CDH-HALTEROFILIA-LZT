@@ -19,15 +19,15 @@ function TshirtSection() {
         <p className='products__p'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </article>
       <article className='products-picture'>
-        <Slider {...settings}>
+        <Slider {...settings} className='products'>
           <div className="product-slider__item">
-            <img src="https://via.placeholder.com/300" alt="tshirt" />
+            <img src="/img/t-shirt1.png" alt="tshirt" />
           </div>
           <div className="product-slider__item">
-            <img src="https://via.placeholder.com/300" alt="tshirt" />
+            <img src="/img/t-shirt2.png" alt="tshirt" />
           </div>
           <div className="product-slider__item">
-            <img src="https://via.placeholder.com/300" alt="tshirt" />
+            <img src="/img/t-shirt3.png" alt="tshirt" />
           </div>
         </Slider>
         <div className="product__div">

@@ -5,7 +5,7 @@
     padding: 0 1em;
 }
 
-.training__h2{
+.training__h2 {
     text-align: center;
     font-family: var(--black-ops-one-font);
     font-size: calc(1rem + 1.2vw);
@@ -67,4 +67,14 @@
 .training-button {
     color: var(--field-drab);
     text-decoration: underline;
+}
+
+@media (width >= 768px) {
+    .training {
+        margin-top: 1.4em;
+    }
+
+    .training__h2 {
+        font-size: calc(1.8em + 1.5vw);
+    }
 }

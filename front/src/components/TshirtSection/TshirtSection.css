@@ -58,3 +58,22 @@
     cursor: pointer;
     transition: all .3s;
 }
+
+@media (width >= 768px) {
+    .products-picture {
+        width: 100%;
+    }
+
+    .products {
+        width: 50%;
+        margin-bottom: 1.4em;
+    }
+
+    .products__h2 {
+        font-size: calc(2rem + 1.2vw);
+    }
+
+    .product__div {
+        width: 50%;
+    }
+}
