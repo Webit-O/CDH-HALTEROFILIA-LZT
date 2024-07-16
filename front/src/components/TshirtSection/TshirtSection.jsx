@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
+import { Link } from 'react-router-dom'
 import './TshirtSection.css'
 function TshirtSection() {
   let settings = {
@@ -17,6 +18,9 @@ function TshirtSection() {
       <article className='products-info'>
         <h2 className='products__h2'>¡NUESTROS PRODUCTOS <span>HALTEROFRIKIS!</span></h2>
         <p className='products__p'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="product__div">
+          <Link className="product__button" to='/retail'>PÁSATE POR NUESTRA TIENDA</Link>     
+        </div>
       </article>
       <article className='products-picture'>
         <Slider {...settings} className='products'>
@@ -30,9 +34,6 @@ function TshirtSection() {
             <img src="/img/t-shirt3.png" alt="tshirt" />
           </div>
         </Slider>
-        <div className="product__div">
-          <button className="product__button">PÁSATE POR NUESTRA TIENDA</button>     
-        </div>
       </article>
     </section>
   )
