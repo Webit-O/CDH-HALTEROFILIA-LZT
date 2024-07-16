@@ -6,7 +6,7 @@
     row-gap: 1em;
     padding-left: 1em;
     font-size: calc(.6em + 1vw);
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .navbar-footer__h2 {
@@ -24,4 +24,18 @@
     row-gap: 1em;
     padding-bottom: 1.2em;
     text-decoration: underline;
+}
+
+
+@media (width >= 1280px) {
+    .navbar-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    .navbar-home,
+    .navbar-legit {
+        width: 50%;
+    }
 }
