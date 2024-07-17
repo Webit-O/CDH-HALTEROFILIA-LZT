@@ -8,14 +8,16 @@
 #title-container {
   display: flex;
   flex-direction: column;
-  width: 87%;
+  width: 100%;
   gap: 20px;
 }
 
 #title-left-container {
   display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 500px;
   width: 100%;
-  padding-top: 7px;
   padding-bottom: 7px;
   flex-direction: column;
   text-align: justify;
@@ -32,28 +34,39 @@
   justify-content: space-between;
 }
 
+#title-upper-wrapper p {
+  padding: 0 20px;
+}
+
 #mobile-video {
-  align-self: center;
-  max-width: 325px;
-  max-height: 400px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 550px;
 }
 
 video {
+  position: absolute;
+  top: -60px;
+  z-index: -2;
   width: 100%;
   border-radius: 2px;
 }
 
 .title {
   font-size: 1.9rem;
+  padding: 0 20px;
 }
 
 .yellow-title {
   font-size: 2.3rem;
-  color: var(--satin-sheen-gold)
+  color: var(--satin-sheen-gold);
 }
 
 #train-btn {
+  align-self: center;
   border: 1.8px solid var(--satin-sheen-gold);
+  width: 87%;
 }
 
 #train-btn:hover a{
@@ -85,27 +98,49 @@ video {
   .video-container {
     display: flex;
     overflow: hidden;
-    height: 450px;
+    height: 600px;
     align-items: center;
   }
 
+  #title-upper-wrapper p {
+    padding: 0;
+  }
+
+  video {
+    position: inherit;
+    height: 1200px;
+  }
+
   #title-upper-wrapper {
-    padding-top: 40px;
+    padding-top: 25px;
     align-items: end;
     justify-content: center;
   }
 
   #title-left-container {
-    width: 700px;
+    position: inherit;
     background: none;
     font-size: 1.7rem;
   }
 
   .title {
     font-size: 3.5rem;
+    padding: 0;
   }
   
   .yellow-title {
     font-size: 3.8rem;
+  }
+
+  #title-container {
+    width: 87%;
+  }
+
+  #title-page {
+    padding: 0;
+  }
+
+  #train-btn {
+    width: 100%;
   }
 }
