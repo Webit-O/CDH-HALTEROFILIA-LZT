@@ -9,7 +9,7 @@ const Header = () => {
   const [click, setclick] = useState(false);
   const Hamburger = (
     <>
-      <NavLink to="/" exact activeClassName="active">
+      <NavLink to="/" exact activeclassname="active">
           <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
         </NavLink>
       <MdOutlineMenu className="HamburgerMenu" size="70px" onClick={() => setclick(!click)} />
@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header>
       <div className='navbar' id='nav-web-style'>
-        <NavLink to="/" exact activeClassName="active">
+        <NavLink to="/" exact activeclassname="active">
           <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
         </NavLink>
         <Navlinks />
