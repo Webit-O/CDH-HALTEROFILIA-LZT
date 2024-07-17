@@ -7,7 +7,7 @@
 
 .quotes-list-title {
     font-family: var(--black-ops-one-font);
-    font-size: calc(1rem + 1.2vw);
+    font-size: calc(1em + 1.2vw);
     color: var(--gold-metallic);
     margin-bottom: 1.4em;
     span {
@@ -20,9 +20,39 @@
 }
 
 .slick-dots li button:before {
-    color: var(--field-drab) !important; /* Cambia #FFFFFF al color que prefieras */
+    color: var(--field-drab) !important;
 }
 
 .slick-dots li.slick-active button:before {
-    color: var(--gold-metallic) !important; /* Cambia #FFFFFF al color que prefieras */
+    color: var(--gold-metallic) !important;
+}
+
+@media (width >= 768px) {
+    .quotes-list {
+        margin-top: 2em;
+    }
+
+    .quotes-list-title {
+        font-size: calc(1.7em + 1.2vw);
+    }
+}
+
+@media (width >= 1024px) {
+    .quotes-list {
+        margin-bottom: 4em;
+    }
+
+    .slick-slider {
+        width: 90%;
+        padding: 0 1em;
+    }
+
+    .quote-card-title {
+        font-size: calc(.4em + 1vw);
+    }
+
+    .quote-card-text {
+        font-size: calc(.6em + .5vw);
+    }
+
 }

@@ -2,13 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 1em;
+    margin-top: 3em;
 }
 
-.training__h2{
+.training__h2 {
     text-align: center;
     font-family: var(--black-ops-one-font);
-    font-size: calc(1rem + 1.2vw);
+    font-size: calc(1.4rem + 1.4vw);
     color: var(--gold-metallic);
     padding: 1em;
 }
@@ -17,7 +17,6 @@
     min-height: calc(10em + 8vh);
     display: flex;
     flex-direction: column;
-    row-gap: 1em;
     padding-bottom: 1em;
 }
 
@@ -61,10 +60,111 @@
     display: flex;
     flex-direction: column;
     row-gap: .4em;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #D8D8D8;
+    color: var(--night);
+    padding: 1em;
+}
+
+.training-text {
+    padding: 1em;
+    font-size: 100%;
+}
+
+.training__div {
+    width: 80%;
+    border: 2px solid var(--night);
+    height: calc(2.2em + 2.2vh);
 }
 
 .training-button {
-    color: var(--field-drab);
-    text-decoration: underline;
+    width: 100%;
+    height: 100%;
+    font-size: calc(1.1rem + .5vw);
+    font-weight: bold;
+    background-color: var(--satin-sheen-gold);
+    color: var(--night);
+    padding: 0 1em;
+    margin-left: -.2em;
+    margin-top: -.2em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.second-info {
+    background-color: var(--night);
+    color: var(--white-smoke);
+}
+
+.second-info > .training__div {
+    border: 2px solid var(--white-smoke);
+}
+
+
+@media (width >= 768px) {
+    .training {
+        margin-top: 1.4em;
+    }
+
+    .training__h2 {
+        font-size: calc(1.8em + 1.5vw);
+    }
+
+    .training__div {
+        width: 60%;
+    }
+}
+
+@media (width >= 1024px) {
+
+    .opo {
+        background-position: center 80%;
+    }
+
+    .train {
+        background-position: center 60%;
+    }
+
+    .diet {
+        background-position: center 20%;
+    }
+
+    .training {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    .training__section {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    .second > .train{
+        order: 2;
+    }
+
+    .training__picture,
+    .training-info {
+        height: calc(15em + 10vh);
+    }
+
+    .training__picture {
+        width: 70%;
+    }
+    .training-info {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .training__h2 {
+        font-size: calc(1.8em + 1.5vw);
+    }
+
+    .training-text {
+        text-align: center;
+        font-size: calc(1em + .5vw);
+    }
 }
