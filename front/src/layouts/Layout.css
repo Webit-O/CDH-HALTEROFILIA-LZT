@@ -1,0 +1,10 @@
+.body-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+}
+
+.outlet {
+    width: 100%;
+}

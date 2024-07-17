@@ -1,12 +1,142 @@
-:root {
-  background-color: #0e0e0e;
-  max-height: 100%;
+/* CARGANDO LAS FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url(./assets/fonts/agrandir-font/Agrandir-Regular.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agrandir';
+  src: url(./assets/fonts/agrandir-font/Agrandir-TextBold.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Agrandir';
+  src: url(./assets/fonts/agrandir-font/Agrandir-Narrow.otf) format('opentype');
+  font-weight: lighter;
+  font-style: normal;
 }
 
-body {
-  margin: 0;
+
+/* DEFINIENDO LAS CUSTOM PROPERTIES */
+
+:root {
+  /* COLORES */
+  --gold-metallic: #BFA41B;
+  --satin-sheen-gold: #BF961B;
+  --field-drab: #735807;
+  --white-smoke: #F2F2F2;
+  --night: #0D0D0D;
+  /* TIPOGRAFÍAS */
+  --black-ops-one-font: 'Black Ops One', system-ui;
+}
+
+/* COLORES QUE ADAPTAMOS AL MODO OSCURO SEGÚN LAS OPCIONES PERSONALIZADAS DE CADA USUARIO EN EL NAVEGADOR */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --white-smoke: #F2F2F2;
+      --night: #0D0D0D;
+    }
+}
+
+/* COLORES A CONFIGURAR SI EL USUARIO HA ACTIVADO EL MODO ALTO CONTRASTE */
+
+@media (prefers-contrast: high) {
+    :root {
+      --white-smoke: #F2F2F2;
+      --night: #0D0D0D;
+    }
+}
+
+/* RESETEAMOS LOS MARGINS Y PADDINGS DE TODAS LAS ETIQUETAS */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* EVITAMOS LOS PROBLEMAS CON LAS IMÁGENES CON ESTA CONFIGURACIÓN */
+
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* RESETEAMOS LOS ENLACES PARA QUE FUNCIONEN COMO CAJAS... */
+
+a {
+    display: block;
+}
+
+/* ...A EXCEPCIÓN DE LOS QUE SE ENCUENTRAN EN PÁRRAFOS */
+
+p a {
+    display: inline;
+}
+
+/* QUITAMOS LOS PUNTOS DE LOS <LI> */
+
+li{
+    list-style-type: none;
+}
+
+/* CONFIGURAMOS ANCLAS SUAVES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* DESACTIVAMOS ESTILOS POR DEFECTO EN LAS PRINCIPALES ETIQUETAS DE TEXTO */
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONFIGURAMOS EL TEXTO QUE SELECCIONAMOS */
+
+::selection {
+    background-color: var(--field-drab);
+    color: var(--white-smoke);
+}
+
+/* NIVELAMOS PROBLEMAS DE TIPOGRAFÍAS Y COLOCACIÓN DE FORMULARIOS */
+
+form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto; /* esto es para el texto cuando está muy largo se le pone un guión para luego continuar */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
 }
 
 button {
   cursor: pointer;
+}
+
+/* CONFIGURAMOS LA TIPOGRAFÍA PARA TODA LA WEB */
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: 'Agrandir', sans-serif;
+    color: var(--white-smoke);
+    background-color: var(--night);
 }

@@ -1,0 +1,15 @@
+.list-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8%;
+}
+
+.list-wrapper img {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  border-radius: 2px;
+}
