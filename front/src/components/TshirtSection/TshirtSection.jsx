@@ -28,10 +28,10 @@ function TshirtSection() {
             <img src="/img/t-shirt1.png" alt="tshirt" />
           </div>
           <div className="product-slider__item">
-            <img src="/img/t-shirt2.png" alt="tshirt" />
+            <img src="/img/salmon-tshirt.webp" alt="tshirt" />
           </div>
           <div className="product-slider__item">
-            <img src="/img/t-shirt3.png" alt="tshirt" />
+            <img src="/img/tshirt-run.png" alt="tshirt" />
           </div>
         </Slider>
       </article>
