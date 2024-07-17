@@ -1,4 +1,5 @@
 import './Trainings.css'
+import TrainingList from '../../components/TrainingsList/TrainingList'
 
 const Trainings = () => {
   return (
@@ -10,6 +11,9 @@ const Trainings = () => {
       <div>
         <p>Halterofilia y fuerza aplicada.</p>
         <p>Con cada uno de nuestros entrenamientos podrás dar lo mejor ti y superarte.</p>
+      </div>
+      <div id='training-list-container'>
+        <TrainingList/>
       </div>
     </div>
   )
