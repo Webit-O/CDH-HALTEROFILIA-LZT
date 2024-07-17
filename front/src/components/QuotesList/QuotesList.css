@@ -8,7 +8,7 @@
 .quotes-list-title {
     font-family: var(--black-ops-one-font);
     font-size: calc(1em + 1.2vw);
-    color: var(--gold-metallic);
+    color: var(--satin-sheen-gold);
     margin-bottom: 1.4em;
     span {
         color: var(--white-smoke);
@@ -24,7 +24,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-    color: var(--gold-metallic) !important;
+    color: var(--satin-sheen-gold) !important;
 }
 
 @media (width >= 768px) {
