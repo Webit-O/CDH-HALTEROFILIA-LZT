@@ -5,9 +5,9 @@ let navbars = [
   {
     classname: 'navbar-home',
     links: [
-      { href: '#', text: 'INICIO' },
-      { href: '#', text: 'SOBRE NOSOTROS' },
-      { href: '#', text: 'TIENDA' },
+      { href: '/', text: 'INICIO' },
+      { href: '/about', text: 'SOBRE NOSOTROS' },
+      { href: '/retail', text: 'TIENDA' },
     ],
   },
   {

@@ -33,11 +33,10 @@
   flex-direction: column;
   width: 100%;
   display: flex;
-  justify-content: right;
   padding-top: 55px;
 }
 
-#nav-mobile-style #nav-list ul {
+#nav-mobile-style #nav-list li {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -49,19 +48,18 @@
   outline: 0.5px solid #2b2b2b44;
 }
 
-#nav-list ul:hover{
+#nav-list li:hover {
   cursor: pointer;
   color: var(--night);
   background-color: var(--satin-sheen-gold);
 }
 
-#nav-list ul:active{
-  cursor: pointer;
+#nav-list .active {
   color: var(--night);
   background-color: var(--satin-sheen-gold);
 }
 
-#nav-list a{
+#nav-list {
   font-family: "Black Ops One", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -76,21 +74,26 @@
 
   #nav-web-style {
     display: flex;
+    width: 100%;
+    padding: 0;
     justify-content: space-around;
   }
   
   #nav-web-style #nav-list {
-    width: 80%;
     display: flex;
-    justify-content: right;
+    width: 75%;
     align-items: center;
+    justify-content: space-between;
   }
-  
-  #nav-web-style #nav-list ul {
-    display: flex;
+
+  #nav-web-style #nav-list li {
     width: 100%;
-    justify-content: center;
     text-align: center;
     padding: 25px;
+  }
+
+  #nav-web-style #nav-list a {
+    width: 100%;
+    text-align: center;
   }
 }
