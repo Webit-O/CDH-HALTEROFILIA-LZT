@@ -1,6 +1,7 @@
 import React from 'react'
-import './TshirtSection.css'
 import Slider from 'react-slick'
+import { Link } from 'react-router-dom'
+import './TshirtSection.css'
 function TshirtSection() {
   let settings = {
     dots: true,
@@ -17,20 +18,22 @@ function TshirtSection() {
       <article className='products-info'>
         <h2 className='products__h2'>¡NUESTROS PRODUCTOS <span>HALTEROFRIKIS!</span></h2>
         <p className='products__p'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div className="product__div">
+          <Link className="product__button" to='/retail'>PÁSATE POR NUESTRA TIENDA</Link>     
+        </div>
       </article>
       <article className='products-picture'>
-        <Slider {...settings}>
+        <Slider {...settings} className='products'>
           <div className="product-slider__item">
-            <img src="https://via.placeholder.com/300" alt="tshirt" />
+            <img src="/img/t-shirt1.png" alt="tshirt" />
           </div>
           <div className="product-slider__item">
-            <img src="https://via.placeholder.com/300" alt="tshirt" />
+            <img src="/img/salmon-tshirt.webp" alt="tshirt" />
           </div>
           <div className="product-slider__item">
-            <img src="https://via.placeholder.com/300" alt="tshirt" />
+            <img src="/img/tshirt-run.png" alt="tshirt" />
           </div>
         </Slider>
-        <button className="product__button">PÁSATE POR NUESTRA TIENDA</button>     
       </article>
     </section>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './NavbarFooter.css'
 
 let navbars = [
@@ -29,7 +30,7 @@ function NavbarFooter() {
             <ul className={navbar.classname} key={index}>
                 { navbar.links.map((link, index) => {
                     return (
-                        <li key={index}><a href={link.href}>{link.text}</a></li>
+                        <li key={index}><Link to={link.href}>{link.text}</Link></li>
                     )
                 })}
             </ul>
@@ -38,6 +39,7 @@ function NavbarFooter() {
   });
   return (
     <footer className='navbar-footer'>
+      <h2 className='navbar-footer__h2'>Club deportivo Halmas</h2>
         { getRenderLinks }
     </footer>
   )

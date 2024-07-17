@@ -4,9 +4,7 @@
 
 .quote-card-pic,
 .quote-card-title {
-    text-align: end;
-    padding: 0em 1em;
-    margin-bottom: .1em;
+    margin-bottom: .2em;
 }
 
 .quote-card-title {
@@ -17,6 +15,7 @@
 }
 
 .quote-card-pic {
+    margin-bottom: 1em;
     display: block;
     width: 100%;
     height: 100%;
@@ -26,4 +25,10 @@
     font-size: calc(.8em + 1vw);
     padding-top: 1em;
     padding: 0em .2em;
+}
+
+@media (width >= 1024px) {
+    .quote-card {
+        padding: 0 1.4em;
+    }
 }
