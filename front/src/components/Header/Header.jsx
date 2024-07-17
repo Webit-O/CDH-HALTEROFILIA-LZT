@@ -18,7 +18,7 @@ const Header = () => {
   const Close = <MdClose className="HamburgerMenu" size="70px" onClick={() => setclick(!click)} />
 
   return (
-    <div>
+    <header>
       <div className='navbar' id='nav-web-style'>
         <NavLink to="/" exact activeClassName="active">
           <img id='logo-header' src="/img/cdhalmas-logo.png" alt="halmas logo" />
@@ -29,7 +29,7 @@ const Header = () => {
         {click ?  Close : Hamburger}
         {click && <Navlinks />}
       </div>
-    </div>
+    </header>
   )
 }
 

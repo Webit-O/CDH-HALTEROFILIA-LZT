@@ -14,19 +14,23 @@ function TrainSection() {
                 CONSIGUE SACARTE TUS OPOSICIONES CON UN MEJOR RENDIMIENTO FÍSICO 
                 ¡A POR EL ÉXITO!
             </p>
-            <button className='training-button'>MÁS INFO</button>
+            <div className="training__div">
+              <button className='training-button'>MÁS INFO</button>
+            </div>
         </article>
       </section>
-      <section className="training__section">
+      <section className="training__section second">
         <div className='training__picture train'>
             <h3 className='training__h3'>ENTRENOS</h3>
         </div>
-        <article className='training-info'>
+        <article className='training-info second-info'>
             <p className='training-text'>
                 ADÉNTRATE EN EL MUNDO DE LA HALTEROFILIA Y FUERZA APLICADA,
                 TE ENSEÑAMOS A ENCONTRAR TU PROPIO CAMINO
             </p>
-            <button className='training-button'>VER ENTRENOS</button>
+            <div className="training__div">
+              <button className='training-button'>VER ENTRENOS</button>
+            </div>
         </article>
       </section>
       <section className="training__section">
@@ -37,7 +41,9 @@ function TrainSection() {
             <p className='training-text'>
                 HACEMOS DIETAS TOTALMENTE PERSONALIZADAS ADAPTADAS A TODO TIPO DE CUERPOS
             </p>
-            <button className='training-button'>MÁS INFO</button>
+            <div className="training__div">
+              <button className='training-button'>MÁS INFO</button>
+            </div>
         </article>
       </section>
     </main>

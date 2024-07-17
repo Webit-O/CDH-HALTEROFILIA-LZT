@@ -3,6 +3,7 @@ import Home from "../pages/Home/Home";
 import NotFound from "../pages/NotFound/NotFound";
 import Layout from "../layouts/Layout";
 import About from "../pages/About/About"
+import Retail from "../pages/Retail/Retail";
 import Trainings from "../pages/Trainings/Trainings";
 
 const router = createBrowserRouter([
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
             {
               path: '/about',
               element: <About />
-          }
+            },
+            {
+                path: '/retail',
+                element: <Retail />
+            }
         ]
     }
 ]);
