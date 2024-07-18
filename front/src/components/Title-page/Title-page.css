@@ -16,12 +16,13 @@
   display: flex;
   position: absolute;
   z-index: 1;
-  top: 500px;
+  top: 450px;
   width: 100%;
   padding-bottom: 7px;
   flex-direction: column;
   text-align: justify;
   gap: 5px;
+  font-size: calc(1.2rem + 1vw);
   background: linear-gradient(180deg, #00000000 0%, #00000063 25%, #000000bc 50%, #000000 100%);
 }
 
@@ -54,41 +55,53 @@ video {
 }
 
 .title {
-  font-size: 1.9rem;
+  font-size: calc(2.2rem + 1vw);
   padding: 0 20px;
 }
 
 .yellow-title {
-  font-size: 2.3rem;
+  font-size: calc(2.5rem + 1vw);
   color: var(--satin-sheen-gold);
 }
 
-#train-btn {
+.train-btn {
   align-self: center;
   border: 1.8px solid var(--satin-sheen-gold);
   width: 87%;
 }
 
-#train-btn:hover a{
+.train-btn:hover a{
   color: var(--night);
   text-shadow: 0px 1px 1px var(--field-drab);
   background-color: var(--satin-sheen-gold);
 }
 
-#train-btn:active a{
+.train-btn:active a{
   color: var(--night);
   text-shadow: 0px 1px 1px var(--field-drab);
   background-color: var(--satin-sheen-gold);
 }
 
-#train-btn a {
+.train-btn a {
   color: var(--satin-sheen-gold);
   padding: 15px 40px;
+}
+
+#btn-web-view {
+  display: none;
 }
 
 @media (min-width: 1000px) {
   #title-right-container {
     display: flex;
+  }
+
+  #btn-web-view {
+    display: flex;
+  }
+
+  #btn-mobile-view {
+    display: none;
   }
 
   #mobile-video {
@@ -115,21 +128,25 @@ video {
     padding-top: 25px;
     align-items: end;
     justify-content: center;
+    gap: 15px;
   }
 
   #title-left-container {
     position: inherit;
+    height: 100%;
+    max-width: 90%;
+    justify-content: center;
     background: none;
-    font-size: 1.7rem;
+    font-size: calc(1.4rem + 1vw);
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: calc(3rem + 1vw);
     padding: 0;
   }
   
   .yellow-title {
-    font-size: 3.8rem;
+    font-size: calc(3.2rem + 1vw);
   }
 
   #title-container {
@@ -140,7 +157,17 @@ video {
     padding: 0;
   }
 
-  #train-btn {
+  .train-btn {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 750px;
+    margin-top: 30px;
+  }
+
+  .train-btn a{
     width: 100%;
+    max-width: 750px;
+    padding: 25px 20px;
   }
 }

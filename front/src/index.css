@@ -1,5 +1,4 @@
 /* CARGANDO LAS FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 @font-face {
   font-family: 'Agrandir';
@@ -139,4 +138,5 @@ body {
     font-family: 'Agrandir', sans-serif;
     color: var(--white-smoke);
     background-color: var(--night);
+    overflow-x: hidden;
 }

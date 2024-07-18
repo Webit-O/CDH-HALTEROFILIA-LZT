@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import { Link } from 'react-router-dom'
 import './TshirtSection.css'
-function TshirtSection() {
+function TshirtSection({className}) {
   let settings = {
     dots: true,
     infinite: true,
@@ -14,7 +14,7 @@ function TshirtSection() {
     arrows: false
   }
   return (
-    <section className='products-section'>
+    <section className={`products-section ${className}`}>
       <article className='products-info'>
         <h2 className='products__h2'>¡NUESTROS PRODUCTOS <span>HALTEROFRIKIS!</span></h2>
         <p className='products__p'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

@@ -11,7 +11,7 @@
     font-size: calc(.8em + 1vw);
     font-weight: bold;
     font-style: italic;
-    color: var(--gold-metallic);
+    color: var(--satin-sheen-gold);
 }
 
 .quote-card-pic {
