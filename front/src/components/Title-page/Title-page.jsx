@@ -13,6 +13,11 @@ const TitlePage = () => {
             <h1 className='title'>TU <span className='yellow-title'>PRÓXIMO</span></h1>
             <h1 className='title yellow-title'>ENTRENAMIENTO</h1>
             <p>DESCUBRE TU CAMINO</p>
+            <div>
+              <button id='btn-web-view' className='train-btn'>
+                <a href="">¡PRUEBA NUESTRO ENTRENAMIENTO!</a>
+              </button>
+            </div>
           </div>
           <div id='title-right-container'>
             <div id='web-video' className='video-container'>
@@ -20,7 +25,7 @@ const TitlePage = () => {
             </div>
           </div>
         </div>
-        <button id='train-btn'>
+        <button id='btn-mobile-view' className='train-btn'>
           <a href="">¡PRUEBA NUESTRO ENTRENAMIENTO!</a>
         </button>
       </div>
