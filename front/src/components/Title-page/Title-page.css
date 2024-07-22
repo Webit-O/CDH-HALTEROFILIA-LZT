@@ -3,6 +3,7 @@
   width: 100%;
   justify-content: center;
   padding-top: 50px;
+  padding-bottom: 2rem;
 }
 
 #title-container {
@@ -70,6 +71,7 @@ video {
   align-self: center;
   border: 1.8px solid var(--satin-sheen-gold);
   width: 87%;
+  margin-top: 1rem;
 }
 
 .train-btn:hover a{
