@@ -1,11 +1,11 @@
 import React from 'react'
 import './TrainSection.css'
 
-function TrainSection() {
+function TrainSection({className}) {
   return (
     <main className='training'>
-      <h2 className='training__h2'>ENTRENAMIENTOS</h2>
-      <section className="training__section">
+      <h2 className={`training__h2 ${className} right`}>ENTRENAMIENTOS</h2>
+      <section className={`training__section  ${className} right`}>
         <div className='training__picture opo'>
             <h3 className='training__h3'>OPOSICIONES</h3>
         </div>
@@ -19,7 +19,7 @@ function TrainSection() {
             </div>
         </article>
       </section>
-      <section className="training__section second">
+      <section className={`training__section second ${className} left`}>
         <div className='training__picture train'>
             <h3 className='training__h3'>ENTRENOS</h3>
         </div>
@@ -33,7 +33,7 @@ function TrainSection() {
             </div>
         </article>
       </section>
-      <section className="training__section">
+      <section className={`training__section  ${className} right`}>
         <div className='training__picture diet'>
             <h3 className='training__h3'>DIETAS Y BIENESTAR</h3>
         </div>

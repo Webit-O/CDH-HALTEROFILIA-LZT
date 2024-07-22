@@ -2,11 +2,12 @@ import React from 'react'
 import { FaStar } from 'react-icons/fa'
 import './QuoteCard.css'
 
-function QuoteCard({ index, name, stars, text }) {
+function QuoteCard({ index, name, stars, text, image }) {
   // ESTAMOS USANDO PROPS - index, name, stars, text
   return (
     <>      
       <div className="quote-card" key={index}>
+        <span className="quote-card-img"><img src={image} alt="person" /></span>
         <h4 className="quote-card-title">{ name }</h4>
         <span className="quote-card-pic">
           {
