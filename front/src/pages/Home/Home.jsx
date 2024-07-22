@@ -23,7 +23,7 @@ const Home = () => {
     }
   }
   return (
-    <div id='home-container'>
+    <div id='home-container' className='home-container'>
       <TitlePage/>
       <Trainers className='reveal right'/>
       <TshirtSection className='reveal left'/>
