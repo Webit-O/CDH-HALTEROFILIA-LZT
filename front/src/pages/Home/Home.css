@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.home-container {
+  overflow-x: hidden;
+}
+
 .reveal.right {
   transform: translateX(150px);
   opacity: 0;

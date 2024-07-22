@@ -24,17 +24,17 @@ let navbars = [
 
 function NavbarFooter() {
 
-  const getRenderLinks = navbars.map((navbar, index) => {
-    return (
-        <>
-            <ul className={navbar.classname} key={index}>
-                { navbar.links.map((link, index) => {
-                    return (
-                        <li key={index}><Link to={link.href}>{link.text}</Link></li>
-                    )
-                })}
-            </ul>
-        </>
+  const getRenderLinks = navbars.map((navbar, navbarIndex) => {
+    return ( 
+      <ul className={navbar.classname} key={navbarIndex}>
+          { navbar.links.map((link, linkIndex) => {
+              return (
+                  <li key={`${navbarIndex}-${linkIndex}`}>
+                    <Link to={link.href}>{link.text}</Link>
+                  </li>
+              )
+          })}
+      </ul>   
     )
   });
   return (

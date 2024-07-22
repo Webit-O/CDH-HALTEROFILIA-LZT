@@ -10,31 +10,37 @@ const quotes = [
     name: 'Veronica',
     stars: 5,
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt cum consequatur voluptates rerum quas culpa eveniet nulla quo nihil illo?',
+    image: 'img/person-profiles/person-photo-2.jpg',
   },
   {
     name: 'Juan',
     stars: 4,
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt cum consequatur voluptates rerum quas culpa eveniet nulla quo nihil illo?',
+    image: 'img/person-profiles/person-photo-1.jpg',
   },
   {
     name: 'Pedro',
     stars: 4,
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt cum consequatur voluptates rerum quas culpa eveniet nulla quo nihil illo?',
+    image: 'img/person-profiles/person-photo-3.jpg',
   },
   {
     name: 'Hugo',
     stars: 5,
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt cum consequatur voluptates rerum quas culpa eveniet nulla quo nihil illo?',
+    image: 'img/person-profiles/person-photo-5.jpg',
   },
   {
     name: 'Cristina',
     stars: 5,
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt cum consequatur voluptates rerum quas culpa eveniet nulla quo nihil illo?',
+    image: 'img/person-profiles/person-photo-4.jpg',
   },
   {
     name: 'Bruno',
     stars: 4,
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt cum consequatur voluptates rerum quas culpa eveniet nulla quo nihil illo?',
+    image: 'img/person-profiles/person-photo-6.jpg',
   },
 ]
 
@@ -43,7 +49,7 @@ function QuotesList() {
   useEffect(() => {
     let myListQuotes;
     myListQuotes = quotes.map((quote, index) => {
-      return <QuoteCard key={index} name={quote.name} stars={quote.stars} text={quote.text}/>
+      return <QuoteCard key={index} name={quote.name} stars={quote.stars} text={quote.text} image={quote.image}/>
     });
     setArrayQuotes(myListQuotes);
   }, []);
