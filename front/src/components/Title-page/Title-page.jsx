@@ -8,7 +8,7 @@ const TitlePage = () => {
           <video id='intro-video' muted loop autoPlay><source src='/video/cdh-video.mp4'/></video>
         </div>
         <div id='title-upper-wrapper'>
-          <div id='title-left-container'>
+          <div id='title-left-container' className='title-left-container'>
             <h1 className='title'>
               <span>PREPÁRATE PARA TU</span>
               <span className='yellow-title'>PRÓXIMO ENTRENAMIENTO</span>

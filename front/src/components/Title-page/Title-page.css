@@ -38,7 +38,7 @@
 }
 
 #title-upper-wrapper p {
-  padding-left: 2rem;
+  padding-left: 1.2rem;
 }
 
 #mobile-video {
@@ -57,9 +57,9 @@ video {
 }
 
 .title {
-  width: 90%;
+  width: 86%;
   font-size: calc(2.2rem + 1vw);
-  padding: 0 2rem;
+  padding-left: 1.2rem;
 }
 
 .yellow-title {
@@ -105,6 +105,33 @@ video {
   display: none;
 }
 
+@media (width >= 768px) {
+  .title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+
+  .yellow-title {
+    padding: 0;
+  }
+  .sub-title {
+    padding-left: 0;
+    padding: 0 5rem !important;
+  }
+
+  .title-left-container {
+    height: calc(13rem + 1vh);
+    justify-content: end;
+  }
+
+  .train-btn {
+    margin-top: 0;
+  }
+}
+
+
 @media (min-width: 1000px) {
 
   .title-page {
@@ -112,7 +139,7 @@ video {
   }
 
   #title-right-container {
-    width: 60%;
+    width: 50%;
     display: flex;
   }
 
@@ -158,7 +185,7 @@ video {
 
   #title-left-container {
     position: inherit;
-    width: 40%;
+    width: 50%;
     height: 100%;
     max-width: 90%;
     justify-content: center;
@@ -172,26 +199,23 @@ video {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2rem + 2vw);
     padding: 0;
   }
   
   .yellow-title {
-    font-size: calc(4rem + 1vw);
+    font-size: calc(2.5rem + 2vw);
     padding-left: 0;
   }
 
   .sub-title {
     font-size: calc(1.2rem + 1vw);
     margin-top: 1rem;
+    padding: 0 !important;
   }
 
   .btn-web-view {
     width: 100%;
-    .train-btn {
-      width: 100%;
-      font-size: calc(1rem + 1vw);
-    }
   }
 
   .title-container {
@@ -203,16 +227,39 @@ video {
   }
 
   .train-btn {
+    width: 100%;
     justify-content: center;
-    text-align: center;
-    width: 90%;
-    max-width: 750px;
-    margin-top: 30px;
+    margin-top: 1rem;
+    font-size: calc(1rem + .5vw);
   }
 
-  .train-btn a{
+  .train-btn a {
     width: 100%;
-    max-width: 750px;
-    padding: 25px 20px;
+    padding: 1rem .5rem;
+  }
+}
+
+@media (width >= 1280px) {
+  #title-left-container {
+    width: 40%;
+  }
+
+  #title-right-container {
+    width: 60%;
+  }
+}
+
+@media (width >= 1600px) {
+  .title {
+    font-size: calc(1.6rem + 2vw);
+  }
+
+  .yellow-title {
+    font-size: calc(2.2rem + 2vw);
+  }
+
+  .sub-title {
+    font-size: calc(.8rem + 1vw);
+    margin-top: 1.8rem;
   }
 }
