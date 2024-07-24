@@ -1,22 +1,29 @@
+import TrainCard from '../TrainCard/TrainCard';
 import './TrainingList.css'
 
+const trainingArray = [
+  { titleES: 'Press Banca', titleEN: 'Bench Press', img: 'img/training-benchpress.png' },
+  { titleES: 'Peso Muerto', titleEN: 'Deadlift', img: 'img/training-deadlift.png' },
+  { titleES: 'Press Militar', titleEN: 'Military Press', img: 'img/training-pressmilitar.png' },
+  { titleES: 'Dominadas', titleEN: 'Pull-ups', img: 'img/training-pullups.png' },
+  { titleES: 'Sentadilla Frontal', titleEN: 'Front Squat', img: 'img/training-frontsquat.png' },
+  { titleES: 'Hip Thrust', titleEN: 'Hip Thrust', img: 'img/training-hipthrust.png' },
+  { titleES: 'Remo', titleEN: 'Row', img: 'img/training-remo.png' },
+  { titleES: 'Zancadas', titleEN: 'Lunges', img: 'img/training-lunges.png' },
+  { titleES: 'Peso Muerto Rumano', titleEN: 'Romanian Deadlift', img: 'img/training-dumbbell.png' }
+];
+
 const TrainingList = () => {
-  //HAY QUE CORREGIR LAS IMAGENES PARA QUE TENGAN TODAS LAS MISMAS PROPORCIONES (AHORA MISMO SON SOLO DE PRUEBA)
-    const trainingImages = [
-      'public/img/training-benchpress.png',
-      'public/img/training-deadlift.png',
-      'public/img/training-dumbbell.png',
-      'public/img/training-frontsquat.png',
-      'public/img/training-hipthrust.png',
-      'public/img/training-lunges.png',
-      'public/img/training-pressmilitar.png',
-      'public/img/training-pullups.png',
-      'public/img/training-remo.png'
-    ]
+  function getTrainingItem() {
+    return trainingArray.map((trainItem, index) => {
+      return (
+        <TrainCard key={index} titles={trainItem.titleES} titlen={trainItem.titleEN} cardID={index}/>)
+    });
+  }
   return (
-    <div className='list-wrapper'>
-      {trainingImages.map((train) =>  {return <img key={train} src={train} alt=''/>})}
-    </div>
+    <main className='list-wrapper'>
+      { getTrainingItem() }
+    </main>
   )
 }
 
