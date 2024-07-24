@@ -1,0 +1,15 @@
+.info-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: var(--satin-sheen-gold);
+}
+
+.info-card__p {
+    width: 80%;
+}
+
+.info-card__active {
+    top: 0;
+}
