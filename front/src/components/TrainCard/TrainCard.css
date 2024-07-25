@@ -1,29 +1,29 @@
 .train-card-0 {
-    background: url("img/trainings/bench-press.jpg");
+    background: url("/img/trainings/bench-press.jpg");
 }
 .train-card-1 {
-    background: url("img/trainings/dead-lift.jpg");
+    background: url("/img/trainings/dead-lift.jpg");
 }
 .train-card-2 {
-    background: url("img/trainings/military-press.jpg");
+    background: url("/img/trainings/military-press.jpg");
 }
 .train-card-3 {
-    background: url("img/trainings/pull-ups.jpg");
+    background: url("/img/trainings/pull-ups.jpg");
 }
 .train-card-4 {
-    background: url("img/trainings/front-squad.jpg");
+    background: url("/img/trainings/front-squad.jpg");
 }
 .train-card-5 {
-    background: url("img/trainings/hip-thrust.webp");
+    background: url("/img/trainings/hip-thrust.webp");
 }
 .train-card-6 {
-    background: url("img/trainings/remo.jpeg");
+    background: url("/img/trainings/remo.jpeg");
 }
 .train-card-7 {
-    background: url("img/trainings/lunges.jpg");
+    background: url("/img/trainings/lunges.jpg");
 }
 .train-card-8 {
-    background: url("img/trainings/romanian-deadlift.jpg");
+    background: url("/img/trainings/romanian-deadlift.jpg");
 }
 
 .train-card {

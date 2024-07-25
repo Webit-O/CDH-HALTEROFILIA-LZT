@@ -20,12 +20,14 @@
   z-index: 1;
   top: 450px;
   width: 100%;
+  height: calc(12rem + 4vh);
   padding-bottom: 7px;
   flex-direction: column;
   text-align: justify;
   gap: 5px;
   font-size: calc(1.2rem + 1vw);
   background: linear-gradient(180deg, #00000000 0%, #00000063 25%, #000000bc 50%, #000000 100%);
+  align-items: center;
 }
 
 #title-right-container {
@@ -35,10 +37,6 @@
 #title-upper-wrapper {
   display: flex;
   justify-content: space-between;
-}
-
-#title-upper-wrapper p {
-  padding-left: 1.2rem;
 }
 
 #mobile-video {
@@ -57,14 +55,24 @@ video {
 }
 
 .title {
-  width: 86%;
+  width: 100%;
   font-size: calc(2.2rem + 1vw);
-  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title span {
+  width: 90%;
+  display: block;
 }
 
 .yellow-title {
   color: var(--satin-sheen-gold);
-  padding-left: .4rem;
+}
+
+.sub-title {
+  width: 90%;
 }
 
 .train-btn {
@@ -215,7 +223,7 @@ video {
   }
 
   .btn-web-view {
-    width: 100%;
+    width: 90%;
   }
 
   .title-container {
@@ -250,8 +258,9 @@ video {
 }
 
 @media (width >= 1600px) {
+
   .title {
-    font-size: calc(1.6rem + 2vw);
+    font-size: calc(1.6rem + 3vw);
   }
 
   .yellow-title {
