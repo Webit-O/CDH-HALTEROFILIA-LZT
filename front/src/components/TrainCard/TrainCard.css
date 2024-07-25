@@ -28,7 +28,7 @@
 
 .train-card {
     width: 80%;
-    height: calc(20rem - 2vh);
+    height: calc(22rem - 2vh);
     clip-path: polygon(
         0 0,
         100% 0,
@@ -92,4 +92,43 @@
     background-color: var(--white-smoke);
     color: var(--night);
     box-shadow: .2em .3em 0 var(--satin-sheen-gold);
+}
+
+@media (min-width: 768px) {
+    .train-card {
+        width: 40%;
+        height: calc(22rem - 1vh);
+    }
+
+    .train-card__span {
+        font-size: calc(1.8rem + 1vw);
+    }
+
+    .train-card__p {
+        font-size: calc(1.7rem - 1.7vw);
+    }
+}
+
+@media(width >= 1280px) {
+    .train-card {
+        width: 60%;
+        height: calc(32rem - 1vh);
+    }
+
+    .train-card-title {
+        font-size: calc(2.8rem - 1vw);
+    }
+
+    .train-card__span {
+        font-size: calc(2rem + 1vw);
+    }
+
+    .train-card__p {
+        font-size: calc(2.4rem - 1vw);
+    }
+    
+    .train-card__button {
+        font-size: calc(.8rem + 1vw);
+        padding: .2em 0;
+    }
 }
