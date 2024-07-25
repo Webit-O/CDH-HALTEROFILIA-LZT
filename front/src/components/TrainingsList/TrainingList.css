@@ -1,15 +1,25 @@
 .list-wrapper {
-  display: flex;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding-top: 2rem;
 }
 
-.list-wrapper img {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  object-fit: contain;
-  border-radius: 2px;
+@media (width >= 768px) {
+  .list-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (width >= 1280px) {
+  .list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: min-content;
+    justify-items: center;
+  }
 }

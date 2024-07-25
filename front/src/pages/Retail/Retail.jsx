@@ -68,9 +68,9 @@ function Retail() {
     <main className='retail'>
       <div className="categories-list">
         <ul>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
+          <li>Ropa deportiva</li>
+          <li>Accesorios</li>
+          <li>Otros productos</li>
         </ul>
       </div>
       <div className="products-list">
