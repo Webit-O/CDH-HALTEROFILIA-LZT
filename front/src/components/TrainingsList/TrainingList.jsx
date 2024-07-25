@@ -15,7 +15,7 @@ const trainingArray = [
   },
   {
     titleES: 'Press Militar',
-    titleEN: 'Military Press',
+    titleEN: 'Overhead Press',
     img: 'img/training-pressmilitar.png',
   },
   {
@@ -24,7 +24,7 @@ const trainingArray = [
     img: 'img/training-pullups.png',
   },
   {
-    titleES: 'Sentadilla Frontal',
+    titleES: 'Frontales',
     titleEN: 'Front Squat',
     img: 'img/training-frontsquat.png',
   },
@@ -33,23 +33,23 @@ const trainingArray = [
     titleEN: 'Hip Thrust',
     img: 'img/training-hipthrust.png',
   },
-  { titleES: 'Remo', titleEN: 'Row', img: 'img/training-remo.png' },
+  { titleES: 'Remo B/M', titleEN: 'BB/DB Row', img: 'img/training-remo.png' },
   { titleES: 'Zancadas', titleEN: 'Lunges', img: 'img/training-lunges.png' },
   {
-    titleES: 'Peso Muerto Rumano',
-    titleEN: 'Romanian Deadlift',
+    titleES: 'Press Mancuernas',
+    titleEN: 'Dumbbell bench press',
     img: 'img/training-dumbbell.png',
   },
 ]
 
 const TrainingList = () => {
-  const [activeCards, setActiveCards] = useState({});
+  const [activeCards, setActiveCards] = useState({})
   const handleButtonClick = (index) => {
     setActiveCards({
       ...activeCards,
-      [index]: !activeCards[index]
-    });
-    console.log('después:', {...activeCards});
+      [index]: !activeCards[index],
+    })
+    console.log('después:', { ...activeCards })
   }
   function getTrainingItem() {
     return trainingArray.map((trainItem, index) => {
