@@ -1,12 +1,12 @@
+import { Link } from 'react-router-dom'
 import './NotFound.css'
-
 const NotFound = () => {
   return (
-    <>
-      <h1>Ooops... ERROR 404</h1>
-      <h4>The page you're trying to access doesn't exist</h4>
-      <h4>Try again refreshing</h4>
-    </>
+    <main className='not-found'>
+      <h1 className='error-title'>Ooops...! ERROR 404</h1>
+      <span className='error-text'>The page you're trying to access doesn't exist.</span>
+      <span className='error-text'>Try again refreshing or go to <Link className='main-page' to="/">HOME</Link></span>
+    </main>
   )
 }
 
