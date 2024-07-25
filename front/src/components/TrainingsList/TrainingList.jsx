@@ -49,7 +49,6 @@ const TrainingList = () => {
       ...activeCards,
       [index]: !activeCards[index],
     })
-    console.log('después:', { ...activeCards })
   }
   function getTrainingItem() {
     return trainingArray.map((trainItem, index) => {
