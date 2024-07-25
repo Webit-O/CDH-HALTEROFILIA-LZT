@@ -258,8 +258,9 @@ video {
 }
 
 @media (width >= 1600px) {
+
   .title {
-    font-size: calc(1.6rem + 2vw);
+    font-size: calc(1.6rem + 3vw);
   }
 
   .yellow-title {
