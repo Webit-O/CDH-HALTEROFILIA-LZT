@@ -4,8 +4,8 @@ const About = () => {
   return (
     <div id='about-container'>
       <div>
-        <h1 className='title'>CLUB DEPORTIVO HALMAS</h1>
-        <h1 className='yellow-title'>Nuestro objetivo, que seas más fuerte</h1>
+        <h1 className='about-title'>CLUB DEPORTIVO HALMAS</h1>
+        <span className='about-subtitle'>Nuestro objetivo, que seas más fuerte</span>
       </div>
       <div>
         <p>Somos especialistas en ejercicios de habilidades y destreza relacionados con el deporte: </p>
